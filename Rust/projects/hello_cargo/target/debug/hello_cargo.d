@@ -1,0 +1,1 @@
+/workspaces/FreeCodeCamp-Certified-Full-Stack-Developer-Curriculum-Projects/Rust/projects/hello_cargo/target/debug/hello_cargo: /workspaces/FreeCodeCamp-Certified-Full-Stack-Developer-Curriculum-Projects/Rust/projects/hello_cargo/src/main.rs
