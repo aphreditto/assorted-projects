@@ -7,11 +7,15 @@
 
 ___
 ## RUST, The Book
+ - [The Book](https://doc.rust-lang.org/book/title-page.html)
+
 ## Getting Started
  - [1.1 Installation](#11-installation) 
  - [1.2 Hello, World!](#12-hello-world)
  - [1.3 Hello, Cargo!](#13-hello-cargo)
 
+## Programming a Guessing Game
+ - [2.0 Programming a Guessing Game](#20-programming-a-guessing-game)
 
 ## β Creating a Project Directory
 [Return](#reference-doc)
@@ -114,3 +118,27 @@ to build and run in a single command
 
 to check compile without producing an executable
 `cargo check`
+
+## 2.0 Programming a Guessing Game
+[Return](#programming-a-guessing-game)
+
+vocab:\
+**:: -** An associated function is a function that’s implemented on a type\
+    - **::new -** line in `String::new` indicates that new is an associated function of the String type\
+**std::io -** provides several useful features, including the ability to accept user input\
+    - **std: -** the rust standard library\
+    - **:io -** input/output\
+**fn -** declares a new function\
+    - **() -** contains the function's parameters\
+    - **{} -** contains the body of the function\
+**let mut *n* = -** creates a mutable variable, *n*\
+    - **mut -** mutable variables can be altered\
+**&-** a reference. a way to let multiple parts of your code access one piece of data without needing to copy that data into memory multiple times. references are immutable by default\
+**.expect-** a method for handling failure\
+**read_line-** returns a *Result* value, an enumeration or enum which is a type that can be in one of multiple possible states. each possible state is called a variant.\
+    - returns results `Ok` or `Err`. If expect returns Err, the program is crashed and returns error message.
+**{}-** in println, `{}` functions as a placeholder. add comma seperated arguments to fill the placeholders in order\
+***crate*-** a collection of Rust source code files\
+**rand = "0.8.5"-** Before we can write code that uses rand, we need to modify the Cargo.toml file to include the rand crate as a dependency\
+*Crates.io is where people in the Rust ecosystem post their open source Rust projects for others to use.*
+**arm-** arm consists of a pattern to match against, and the code that should be run if the value given to match fits that arm’s pattern\
