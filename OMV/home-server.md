@@ -78,26 +78,6 @@ Jellyfin:
 [Return](#debian-home-server)
 
 make compose (yaml) file
-`---
-services:
-  jellyfin:
-    image: lscr.io/linuxserver/jellyfin:latest
-    container_name: jellyfin
-    environment:
-      - PUID=1005
-      - PGID=1005
-      - TZ=US/Central
-    volumes:
-      - ${PATH_TO_APPDATA}/jellyfin/config:/config
-      - ${PATH_TO_APPDATA}/jellyfin/cache:/cache
-      - CHANGE_TO_COMPOSE_DATA_PATH/media:/media
-    devices:
-      - /dev/dri:/dev/dri
-    ports:
-      - 8096:8096
-      - 8920:8920
-      - 7359:7359/udp
-      - 1900:1900/udp
-    restart: unless-stopped
-volumes:   # add this section
-  step:    # does not need anything underneath this`
+
+set up jellyfin-ffmpeg
+
